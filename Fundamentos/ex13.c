@@ -3,7 +3,7 @@ a sua base e a sua altura.*/
 
 #include <stdio.h>
 
-float claculaArea(float base, float altura){
+float calculaArea(float base, float altura){
     float area = (base * altura)/2;
     return area;
 }
@@ -17,7 +17,7 @@ int main(void){
     printf("altura = ");
     scanf("%f", &h);
 
-    s = claculaArea(b, h);
+    s = calculaArea(b, h);
 
     printf("area ~ %.2f\n", s);
     return 0;
