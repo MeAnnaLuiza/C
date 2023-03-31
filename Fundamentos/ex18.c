@@ -1,4 +1,5 @@
-/*Escreva um algoritmo que leia dez números e imprima a soma dos números digitados.*/
+/*Escreva um algoritmo que leia dez números e imprima a soma dos números digitados.
+O valor n deve ser informadoo pelo usuário.*/
 
 #include <stdio.h>
 
