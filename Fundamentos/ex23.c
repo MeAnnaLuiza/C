@@ -4,28 +4,12 @@
 #include <string.h>
 
 int main(void) {
-    char nomes[20][50];
-    float salarios[20];
-    float maioSalario = 0.0;
-    int indexMaior;
+    int primeiro_par = 100;
+    int ultimo_par = 200;
+    int quantidade_pares = (ultimo_par - primeiro_par) / 2 + 1;
+    int soma_pares = quantidade_pares * (primeiro_par + ultimo_par) / 2;
 
-    for(int i = 0; i < 20; i++){
-        printf("Informe o nome do funcionario %d: ", i+ 1);
-        scanf("%s", nomes[i]);
-
-        printf("Informe o salario do funcionario %d: ", i+1);
-        scanf("%f", &salarios[i]);
-
-        if(salarios[i] > maioSalario){
-            maioSalario = salarios[i];
-            indexMaior = i;
-        }
-
-        printf("\n");
-    }
-
-    printf("o maior salario e o do funcionario %s, de R$%.2f\n", nomes[indexMaior], salarios[indexMaior]);
-
+    printf("A soma dos numeros pares de 100 a 200 e: %d\n", soma_pares);
 
     return 0;
 }
