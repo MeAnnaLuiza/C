@@ -4,7 +4,7 @@ por definição*/
 
 #include <stdio.h>
 
-int main() {
+int main(void) {
   double n, i, fatorial = 1;
 
   printf("Digite um valor inteiro para calcular o fatorial: ");

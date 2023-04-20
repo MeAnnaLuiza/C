@@ -9,8 +9,7 @@ são: de 1 a 10 anos, de 11 a 20 anos, de 21 a 30 anos e acima de 31 anos.*/
 
 #include <stdio.h>
 
-int main(void)
-{
+int main(void){
     int idades[15];
     float pesos[15];
     float mediaFaixa1 = 0, mediaFaixa2 = 0, mediaFaixa3 = 0, mediaFaixa4 = 0;
