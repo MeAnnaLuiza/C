@@ -19,7 +19,7 @@ int main(){
         //preOrdem_ArvAVL(avl);
         //printf("\n\n");
     }
-//
+
     printf("\nAVL tree:\n");
     emOrdem_ArvAVL(avl);
     printf("\n\n");
