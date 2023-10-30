@@ -16,9 +16,6 @@ int main(){
     imprime_Grafo(gr);
     printf("\nBusca \n");
     int vis[5];
-    // http://www.thelearningpoint.net/computer-science/algorithms-graph-traversal---breadth-first-search-with-c-program-source-code
-    //buscaProfundidade_Grafo(gr, 0, vis);
-    //buscaLargura_Grafo(gr, 0, vis);
 
     int i,ant[5];
     float dist[5];
