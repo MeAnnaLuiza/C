@@ -4,9 +4,7 @@
 #include "SkipList.h"
 
 int main(){
-    // Seed random number generator
 	srand((unsigned)time(0));
-    // create SkipList object with MAXLVL and P
     SkipList* sk = criaSkipList(10, 0.5);
 
     printf("Vazia = %d\n",vaziaSkipList(sk));
