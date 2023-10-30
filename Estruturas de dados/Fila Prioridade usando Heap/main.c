@@ -8,12 +8,7 @@ struct paciente{
 };
 
 int main(){
-    struct paciente itens[6] = {{"Andre",1},
-                                {"Bianca",2},
-                                {"Carlos",5},
-                                {"Nilza",8},
-                                {"Inacio",6},
-                                {"Edu",4}};
+    struct paciente itens[6] = {{"Andre",1},{"Bianca",2},{"Carlos",5},{"Nilza",8},{"Inacio",6},{"Edu",4}};
 
     FilaPrio* fp;
     fp = cria_FilaPrio();
