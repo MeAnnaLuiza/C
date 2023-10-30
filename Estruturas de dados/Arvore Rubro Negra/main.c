@@ -4,7 +4,6 @@
 int main(){
     ArvLLRB * raiz = cria_ArvLLRB();
     //system ("color C");
-    //https://www.youtube.com/watch?v=rcDF8IqTnyI
 
     //int i, N = 7, val[7] ={20,15,30,85,50,21,70};
     int i, N = 9, val[9] = {11,2,1,5,4,7,8,14,15};
@@ -47,16 +46,12 @@ int main(){
     ArvAVL* avl;
     int res,i;
     int N = 10, dados[10] = {50,25,10,5,7,3,30,20,8,15};
-    //int N = 11, dados[11] = {50,25,10,5,5,7,3,30,20,8,15};
 
     avl = cria_ArvAVL();
 
     for(i=0;i<N;i++){
         printf("Inserindo: %d\n",dados[i]);
         res = insere_ArvAVL(avl,dados[i]);
-        //printf("\n\nres = %d\n",res);
-        //preOrdem_ArvAVL(avl);
-        //printf("\n\n");
     }
 
     printf("\nAVL tree:\n");
@@ -69,7 +64,6 @@ int main(){
         res = remove_ArvAVL(avl,dadosR[i]);
         printf("\n\nres = %d\n",res);
         preOrdem_ArvAVL(avl);
-        //printf("\n\n");
     }
 
     printf("\nAVL tree:\n");
@@ -77,13 +71,6 @@ int main(){
     printf("\n\n");
 
     libera_ArvAVL(avl);
-
-//    int x = 5;
-//    printf("%d \n",labs(x));
-//    printf("%d \n",labs(-x));
-//    x = -10;
-//    printf("%d \n",labs(x));
-//    printf("%d \n",labs(-x));
 
     return 0;
 }
