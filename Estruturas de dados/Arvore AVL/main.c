@@ -5,7 +5,6 @@
 int main(){
     ArvAVL* avl;
     int res,i;
-    //int N = 10, dados[10] = {50,25,10,5,7,3,30,20,8,15};
     //int N = 11, dados[11] = {50,25,10,5,5,7,3,30,20,8,15};
     int N = 10, dados[10] = {1,2,3,10,4,5,9,7,8,6};
 
@@ -30,9 +29,7 @@ int main(){
 //        res = remove_ArvAVL(avl,dadosR[i]);
 //        printf("\n\nres = %d\n",res);
 //        preOrdem_ArvAVL(avl);
-//        //printf("\n\n");
 //    }
-//
 //    printf("\nAVL tree:\n");
 //    preOrdem_ArvAVL(avl);
 //    printf("\n\n");
@@ -53,7 +50,6 @@ int main(){
     printf("\n\n");
 
     libera_ArvAVL(avl);
-
 
     return 0;
 }
