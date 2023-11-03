@@ -31,7 +31,6 @@ int main(){
 //    }
 //    printf("\nAVL tree:\n");
 //    preOrdem_ArvAVL(avl);
-//    printf("\n\n");
 
     remove_ArvAVL(avl,6);
     printf("\nAVL tree:\n");
