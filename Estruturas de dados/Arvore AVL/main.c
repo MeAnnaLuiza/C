@@ -16,7 +16,6 @@ int main(){
         res = insere_ArvAVL(avl,dados[i]);
         //printf("\n\nres = %d\n",res);
         //preOrdem_ArvAVL(avl);
-        //printf("\n\n");
     }
 
     printf("\nAVL tree:\n");
