@@ -11,7 +11,6 @@ int main(){
     avl = cria_ArvAVL();
 
     for(i=0;i<N;i++){
-        //printf("========================\n");
         //printf("Inserindo: %d\n",dados[i]);
         res = insere_ArvAVL(avl,dados[i]);
         //printf("\n\nres = %d\n",res);
