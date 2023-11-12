@@ -19,17 +19,7 @@ int main(){
 
     printf("\nAVL tree:\n");
     emOrdem_ArvAVL(avl);
-    printf("\n\n");
-//
-//    int NR = 4, dadosR[4] = {7,51,3,5};
-//    for(i=0;i<NR;i++){
-//        printf("\nRemovendo: %d\n",dadosR[i]);
-//        res = remove_ArvAVL(avl,dadosR[i]);
-//        printf("\n\nres = %d\n",res);
-//        preOrdem_ArvAVL(avl);
-//    }
-//    printf("\nAVL tree:\n");
-//    preOrdem_ArvAVL(avl);
+    printf("\n\n")
 
     remove_ArvAVL(avl,6);
     printf("\nAVL tree:\n");
