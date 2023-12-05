@@ -18,8 +18,6 @@ void printfVet(int *V  , int N){
     printf("\n");
 }
 
-//============================================
-
 void bubbleSort(int *V  , int N){
     int i, continua, aux;
     do{
@@ -129,8 +127,8 @@ void insertionSortMatricula(struct aluno *V, int N){
         V[j] = aux;
     }
 }
-/*saída strcmp(str1,str2)
-    == 0: str1 é igual a str2
+/*saï¿½da strcmp(str1,str2)
+    == 0: str1 ï¿½ igual a str2
      > 0: str1 vem depois de str2
      < 0: str1 vem antes de str2
 */

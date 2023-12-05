@@ -80,8 +80,7 @@ struct NO* remove_atual(struct NO* atual) {
         no1 = no2;
         no2 = no2->dir;
     }
-    // no2 � o n� anterior a r na ordem e-r-d
-    // no1 � o pai de no2
+
     if(no1 != atual){
         no1->dir = no2->esq;
         no2->esq = atual->esq;
