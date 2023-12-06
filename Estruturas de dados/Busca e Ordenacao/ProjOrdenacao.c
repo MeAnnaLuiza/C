@@ -48,7 +48,7 @@ void bubbleSort2(int *V  , int N){//otimizado
         fim--;
     }while(continua != 0);
 }
-//============================================
+
 void insertionSort(int *V, int N){
     int i, j, aux;
     for(i = 1; i < N; i++){
@@ -58,7 +58,7 @@ void insertionSort(int *V, int N){
         V[j] = aux;
     }
 }
-//============================================
+
 void selectionSort(int *V, int N){
     int i, j, menor, troca;
     for(i = 0; i < N-1; i++){
