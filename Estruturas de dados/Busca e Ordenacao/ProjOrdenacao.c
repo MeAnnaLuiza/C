@@ -33,7 +33,7 @@ void bubbleSort(int *V  , int N){
     }while(continua);
 }
 
-void bubbleSort2(int *V  , int N){//otimizado
+void bubbleSort2(int *V  , int N){
     int i, continua, aux, fim = N;
     do{
         continua = 0;
