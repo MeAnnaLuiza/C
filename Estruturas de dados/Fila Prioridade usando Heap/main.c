@@ -23,7 +23,6 @@ int main(){
 
     imprime_FilaPrio(fp);
 
-    //teste
     printf("=================================\n");
     insere_FilaPrio(fp, "Teste",9);
     imprime_FilaPrio(fp);
