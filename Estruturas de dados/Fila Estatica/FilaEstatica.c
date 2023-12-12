@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "FilaEstatica.h" //inclui os Protótipos
+#include "FilaEstatica.h" //inclui os Protï¿½tipos
 
-//Definição do tipo Fila
 struct fila{
     int inicio, final, qtd;
     struct aluno dados[MAX];
