@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "DequeEstatico.h" //inclui os Protótipos
+#include "DequeEstatico.h" //inclui os Protï¿½tipos
 
-//Definição do tipo Deque
 struct Deque{
     int inicio, final, qtd;
     struct aluno dados[MAX];
