@@ -1,13 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "FilaPrioridadeHeap.h" //inclui os Protótipos
-
-// http://see-programming.blogspot.com.br/2013/05/implement-priority-queue-using-binary.html
-// constroisobe ???
-
-// http://algs4.cs.princeton.edu/24pq/
-
+#include "FilaPrioridadeHeap.h" //inclui os Protï¿½tipos
 
 struct paciente{
     char nome[30];
@@ -57,12 +51,12 @@ int insere_FilaPrio(FilaPrio* fp, char *nome, int prioridade){
         return 0;
     if(fp->qtd == MAX)//fila cheia
         return 0;
-    /* insere na primeira posição livre */
+    /* insere na primeira posiï¿½ï¿½o livre */
     strcpy(fp->dados[fp->qtd].nome,nome);
     fp->dados[fp->qtd].prio = prioridade;
-    /* desloca elemento para posição correta */
+    /* desloca elemento para posiï¿½ï¿½o correta */
     promoverElemento(fp,fp->qtd);
-    /* incrementa número de elementos no heap */
+    /* incrementa nï¿½mero de elementos no heap */
     fp->qtd++;
     return 1;
 }
