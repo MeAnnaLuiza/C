@@ -1,4 +1,4 @@
-//Arquivo DequeDinamico.h
+
 struct aluno{
     int matricula;
     char nome[30];
