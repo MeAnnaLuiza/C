@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "DequeEstatico.h" //inclui os Prot�tipos
+#include "DequeEstatico.h"
 
 struct Deque{
     int inicio, final, qtd;
