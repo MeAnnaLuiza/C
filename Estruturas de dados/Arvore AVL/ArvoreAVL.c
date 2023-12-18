@@ -251,7 +251,7 @@ int remove_ArvAVL(ArvAVL *raiz, int valor){
 	}
 
 	if((*raiz)->info == valor){
-	    if(((*raiz)->esq == NULL || (*raiz)->dir == NULL)){// n� tem 1 filho ou nenhum
+	    if(((*raiz)->esq == NULL || (*raiz)->dir == NULL)){
 			struct NO *oldNode = (*raiz);
 			if((*raiz)->esq != NULL)
                 *raiz = (*raiz)->esq;
