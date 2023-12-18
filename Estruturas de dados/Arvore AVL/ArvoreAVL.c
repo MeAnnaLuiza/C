@@ -164,7 +164,7 @@ void RotacaoRL(ArvAVL *A){
 
 int insere_ArvAVL(ArvAVL *raiz, int valor){
     int res;
-    if(*raiz == NULL){//�rvore vazia ou n� folha
+    if(*raiz == NULL){
         struct NO *novo;
         novo = (struct NO*)malloc(sizeof(struct NO));
         if(novo == NULL)
