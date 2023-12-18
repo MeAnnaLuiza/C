@@ -222,7 +222,7 @@ struct NO* procuraMenor(struct NO* atual){
 }
 
 int remove_ArvAVL(ArvAVL *raiz, int valor){
-	if(*raiz == NULL){// valor n�o existe
+	if(*raiz == NULL){
 	    printf("valor n�o existe!!\n");
 	    return 0;
 	}
