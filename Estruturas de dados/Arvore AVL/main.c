@@ -11,7 +11,6 @@ int main(){
 
     for(i=0;i<N;i++){
         res = insere_ArvAVL(avl,dados[i]);
-        //printf("\n\nres = %d\n",res);
         //preOrdem_ArvAVL(avl);
     }
 
