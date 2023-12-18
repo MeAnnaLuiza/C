@@ -258,7 +258,7 @@ int remove_ArvAVL(ArvAVL *raiz, int valor){
             else
                 *raiz = (*raiz)->dir;
 			free(oldNode);
-		}else { // n� tem 2 filhos
+		}else {
 			struct NO* temp = procuraMenor((*raiz)->dir);
 			(*raiz)->info = temp->info;
 			remove_ArvAVL(&(*raiz)->dir, (*raiz)->info);
