@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "ArvoreAVL.h" //inclui os Prot�tipos
+#include "ArvoreAVL.h"
 
 struct NO{
     int info;
