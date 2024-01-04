@@ -1,7 +1,5 @@
 # Linguagem de Programação C
 
----
-
 ## Algoritmos de ordenação de dados
 
 Para rodar os códigos, é necessário compilar os arquivos em `C` dentro da pasta. É possível fazer isso com o seguinte comando:
@@ -15,6 +13,8 @@ Isso criará um executável com o nome escolhido. Para ser rodado, utilize o com
 ```bash
   ./NOME_EXECUTAVEL
 ```
+
+---
 
 ## Estruturas de dados
 
