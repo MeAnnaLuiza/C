@@ -51,7 +51,7 @@ int insere_ArvBin(ArvBin* raiz, int valor){
             ant = atual;
             if(valor == atual->info){
                 free(novo);
-                return 0;//elemento j� existe
+                return 0;
             }
 
             if(valor > atual->info)
