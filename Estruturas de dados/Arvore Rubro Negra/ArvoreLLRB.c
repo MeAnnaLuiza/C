@@ -111,16 +111,13 @@ struct NO* insereNO(struct NO* H, int valor, int *resp){
             H->dir = insereNO(H->dir,valor,resp);
     }
 
-    //nó Vermelho é sempre filho à esquerda
+
     if(cor(H->dir) == RED && cor(H->esq) == BLACK)
         H = rotacionaEsquerda(H);
 
-    //Filho e Neto são vermelhos
-    //Filho vira pai de 2 nós vermelhos
     if(cor(H->esq) == RED && cor(H->esq->esq) == RED)
         H = rotacionaDireita(H);
 
-    //2 filhos Vermelhos: troca cor!
     if(cor(H->esq) == RED && cor(H->dir) == RED)
         trocaCor(H);
 
@@ -136,22 +133,16 @@ int insere_ArvLLRB(ArvLLRB* raiz, int valor){
 
     return resp;
 }
-// =================================
-// REMOÇÃO
-// =================================
+
 struct NO* balancear(struct NO* H){
-    //nó Vermelho é sempre filho à esquerda
     if(cor(H->dir) == RED)
         H = rotacionaEsquerda(H);
 
-    //Filho da direita e neto da esquerda são vermelhos
     //if(H->esq != NULL && cor(H->dir) == RED && cor(H->esq->esq) == RED)
 
-    //Filho da esquerda e neto da esquerda são vermelhos
     if(H->esq != NULL && cor(H->esq) == RED && cor(H->esq->esq) == RED)
         H = rotacionaDireita(H);
 
-    //2 filhos Vermelhos: troca cor!
     if(cor(H->esq) == RED && cor(H->dir) == RED)
         trocaCor(H);
 
@@ -189,7 +180,6 @@ struct NO* removerMenor(struct NO* H){
     return balancear(H);
 }
 
-// tirei a recursão, assim fica igual a usada na AVL
 struct NO* procuraMenor(struct NO* atual){
     struct NO *no1 = atual;
     struct NO *no2 = atual->esq;
@@ -238,9 +228,7 @@ int remove_ArvLLRB(ArvLLRB *raiz, int valor){
     }else
         return 0;
 }
-// =================================
-// PROPRIEDADES ÁRVORE
-// =================================
+
 int estaVazia_ArvLLRB(ArvLLRB *raiz){
     if(raiz == NULL)
         return 1;
@@ -272,9 +260,7 @@ int altura_ArvLLRB(ArvLLRB *raiz){
     else
         return(alt_dir + 1);
 }
-// =================================
-// PERCURSO
-// =================================
+
 void  posOrdem_ArvLLRB(ArvLLRB *raiz, int H){
     if(raiz == NULL)
         return;
