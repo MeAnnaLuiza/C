@@ -96,7 +96,6 @@ void emOrdem_ArvAVL(ArvAVL *raiz){
         return;
     if(*raiz != NULL){
         emOrdem_ArvAVL(&((*raiz)->esq));
-        //printf("%d\n",(*raiz)->info);
         printf("No %d: H(%d) fb(%d)\n",(*raiz)->info,altura_NO(*raiz),fatorBalanceamento_NO(*raiz));
         emOrdem_ArvAVL(&((*raiz)->dir));
     }
