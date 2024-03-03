@@ -27,8 +27,8 @@ void libera_NO(struct NO* no){
 void libera_ArvBin(ArvBin* raiz){
     if(raiz == NULL)
         return;
-    libera_NO(*raiz);//libera cada n�
-    free(raiz);//libera a raiz
+    libera_NO(*raiz);
+    free(raiz);
 }
 
 int insere_ArvBin(ArvBin* raiz, int valor){
