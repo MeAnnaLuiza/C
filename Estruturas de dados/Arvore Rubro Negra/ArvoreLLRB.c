@@ -32,12 +32,10 @@ void libera_NO(struct NO* no){
 void libera_ArvLLRB(ArvLLRB* raiz){
     if(raiz == NULL)
         return;
-    libera_NO(*raiz);//libera cada nó
-    free(raiz);//libera a raiz
+    libera_NO(*raiz);
+    free(raiz);
 }
-// =================================
-// CONSULTA ÁRVORE
-// =================================
+
 int consulta_ArvLLRB(ArvLLRB *raiz, int valor){
     if(raiz == NULL)
         return 0;
@@ -53,9 +51,7 @@ int consulta_ArvLLRB(ArvLLRB *raiz, int valor){
     }
     return 0;
 }
-// =================================
-// ROTAÇÃO
-// =================================
+
 struct NO* rotacionaEsquerda(struct NO* A){
     struct NO* B = A->dir;
     A->dir = B->esq;
@@ -73,9 +69,7 @@ struct NO* rotacionaDireita(struct NO* A){
     A->cor = RED;
     return B;
 }
-// =================================
-// PROPRIEDADES
-// =================================
+
 int cor(struct NO* H){
     if(H == NULL)
         return BLACK;
@@ -91,9 +85,6 @@ void trocaCor(struct NO* H){
         H->dir->cor = !H->dir->cor;
 }
 
-// =================================
-// INSERCAO
-// =================================
 struct NO* insereNO(struct NO* H, int valor, int *resp){
     if(H == NULL){
         struct NO *novo;
@@ -112,7 +103,7 @@ struct NO* insereNO(struct NO* H, int valor, int *resp){
     }
 
     if(valor == H->info)
-        *resp = 0;// Valor duplicado
+        *resp = 0;
     else{
         if(valor < H->info)
             H->esq = insereNO(H->esq,valor,resp);
