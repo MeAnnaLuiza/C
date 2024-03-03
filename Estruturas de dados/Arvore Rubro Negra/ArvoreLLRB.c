@@ -1,8 +1,6 @@
-// http://www.teachsolaisgames.com/articles/balanced_left_leaning.html
-
 #include <stdio.h>
 #include <stdlib.h>
-#include "ArvoreLLRB.h" //inclui os ProtÛtipos
+#include "ArvoreLLRB.h"
 
 #define RED 1
 #define BLACK 0
@@ -14,9 +12,6 @@ struct NO{
     int cor;
 };
 
-// =================================
-// CRIA«√O DA ARVORE
-// =================================
 ArvLLRB* cria_ArvLLRB(){
     ArvLLRB* raiz = (ArvLLRB*) malloc(sizeof(ArvLLRB));
     if(raiz != NULL){
@@ -24,9 +19,7 @@ ArvLLRB* cria_ArvLLRB(){
     }
     return raiz;
 }
-// =================================
-// LIBERAR
-// =================================
+
 void libera_NO(struct NO* no){
     if(no == NULL)
         return;
@@ -39,11 +32,11 @@ void libera_NO(struct NO* no){
 void libera_ArvLLRB(ArvLLRB* raiz){
     if(raiz == NULL)
         return;
-    libera_NO(*raiz);//libera cada nÛ
+    libera_NO(*raiz);//libera cada n√≥
     free(raiz);//libera a raiz
 }
 // =================================
-// CONSULTA ¡RVORE
+// CONSULTA √ÅRVORE
 // =================================
 int consulta_ArvLLRB(ArvLLRB *raiz, int valor){
     if(raiz == NULL)
@@ -61,7 +54,7 @@ int consulta_ArvLLRB(ArvLLRB *raiz, int valor){
     return 0;
 }
 // =================================
-// ROTA«√O
+// ROTA√á√ÉO
 // =================================
 struct NO* rotacionaEsquerda(struct NO* A){
     struct NO* B = A->dir;
@@ -127,12 +120,12 @@ struct NO* insereNO(struct NO* H, int valor, int *resp){
             H->dir = insereNO(H->dir,valor,resp);
     }
 
-    //nÛ Vermelho È sempre filho ‡ esquerda
+    //n√≥ Vermelho √© sempre filho √† esquerda
     if(cor(H->dir) == RED && cor(H->esq) == BLACK)
         H = rotacionaEsquerda(H);
 
-    //Filho e Neto s„o vermelhos
-    //Filho vira pai de 2 nÛs vermelhos
+    //Filho e Neto s√£o vermelhos
+    //Filho vira pai de 2 n√≥s vermelhos
     if(cor(H->esq) == RED && cor(H->esq->esq) == RED)
         H = rotacionaDireita(H);
 
@@ -153,17 +146,17 @@ int insere_ArvLLRB(ArvLLRB* raiz, int valor){
     return resp;
 }
 // =================================
-// REMO«√O
+// REMO√á√ÉO
 // =================================
 struct NO* balancear(struct NO* H){
-    //nÛ Vermelho È sempre filho ‡ esquerda
+    //n√≥ Vermelho √© sempre filho √† esquerda
     if(cor(H->dir) == RED)
         H = rotacionaEsquerda(H);
 
-    //Filho da direita e neto da esquerda s„o vermelhos
+    //Filho da direita e neto da esquerda s√£o vermelhos
     //if(H->esq != NULL && cor(H->dir) == RED && cor(H->esq->esq) == RED)
 
-    //Filho da esquerda e neto da esquerda s„o vermelhos
+    //Filho da esquerda e neto da esquerda s√£o vermelhos
     if(H->esq != NULL && cor(H->esq) == RED && cor(H->esq->esq) == RED)
         H = rotacionaDireita(H);
 
@@ -205,7 +198,7 @@ struct NO* removerMenor(struct NO* H){
     return balancear(H);
 }
 
-// tirei a recurs„o, assim fica igual a usada na AVL
+// tirei a recurs√£o, assim fica igual a usada na AVL
 struct NO* procuraMenor(struct NO* atual){
     struct NO *no1 = atual;
     struct NO *no2 = atual->esq;
@@ -255,7 +248,7 @@ int remove_ArvLLRB(ArvLLRB *raiz, int valor){
         return 0;
 }
 // =================================
-// PROPRIEDADES ¡RVORE
+// PROPRIEDADES √ÅRVORE
 // =================================
 int estaVazia_ArvLLRB(ArvLLRB *raiz){
     if(raiz == NULL)
