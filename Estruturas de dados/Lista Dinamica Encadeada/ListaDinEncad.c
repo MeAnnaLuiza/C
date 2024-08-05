@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "ListaDinEncad.h" //inclui os Protótipos
+#include "ListaDinEncad.h" //inclui os Protï¿½tipos
 
-//Definição do tipo lista
+//Definiï¿½ï¿½o do tipo lista
 struct elemento{
     struct aluno dados;
     struct elemento *prox;
@@ -69,7 +69,7 @@ int insere_lista_final(Lista* li, struct aluno al){
         return 0;
     no->dados = al;
     no->prox = NULL;
-    if((*li) == NULL){//lista vazia: insere início
+    if((*li) == NULL){
         *li = no;
     }else{
         Elem *aux;
@@ -102,7 +102,7 @@ int insere_lista_ordenada(Lista* li, struct aluno al){
     if(no == NULL)
         return 0;
     no->dados = al;
-    if((*li) == NULL){//lista vazia: insere início
+    if((*li) == NULL){//lista vazia: insere inï¿½cio
         no->prox = NULL;
         *li = no;
         return 1;
@@ -113,7 +113,7 @@ int insere_lista_ordenada(Lista* li, struct aluno al){
             ant = atual;
             atual = atual->prox;
         }
-        if(atual == *li){//insere início
+        if(atual == *li){//insere inï¿½cio
             no->prox = (*li);
             *li = no;
         }else{
@@ -134,7 +134,7 @@ int remove_lista(Lista* li, int mat){
         ant = no;
         no = no->prox;
     }
-    if(no == NULL)//não encontrado
+    if(no == NULL)//nï¿½o encontrado
         return 0;
 
     if(no == *li)//remover o primeiro?
